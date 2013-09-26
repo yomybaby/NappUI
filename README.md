@@ -1,6 +1,6 @@
 # Napp UI
 
-This module extends the native UI componets provided by the Titanium Mobile SDK. We are more properties to a bunch of UI components, giving you more freedom for styling and functionality. 
+This module extends the native UI components provided by the Titanium Mobile SDK. We are more properties to a bunch of UI components, giving you more freedom for styling and functionality. 
 
 This is not a set of new UI components. Instead, we are extending the existing framework.
 
@@ -17,14 +17,15 @@ Simply add the following lines to your `tiapp.xml` file:
 
 ## How to use
 
-The following lists the UI components and its new extended functionality.
+Instantiate the module through ```require();```  This will modify and override the native Titanium classes with the NappUI methods.  
 
-Start by adding the NappUI.js to your project and add the following lines to the root of your project. (app.js) or (index.js for Alloy)
+Note: Creating a ```NappUI``` object is optional, but may be useful if methods, properties or custom proxy objects are defined.
 
 ```javascript
-var NappUI = require("NappUI");
-NappUI.init();
+var NappUI = require("dk.napp.ui");
 ```
+
+The following lists the UI components and its new extended functionality.
 
 ### Window
 
@@ -200,6 +201,7 @@ var toolbar = Ti.UI.iOS.createToolbar({
 });
 ```
 
+
 ### NavigationGroup
 
 * Close all windows in the navigationGroup, and return to the very first window in the group.
@@ -208,15 +210,78 @@ var toolbar = Ti.UI.iOS.createToolbar({
 navGroup.popToRoot();
 ```
 
+
+### Label
+
+* attributed Text
+
+~~~~
+var string = "This is an example string";
+
+var label = Ti.UI.createLabel({
+	width: Ti.UI.FILL,
+    text: string,
+    font: {
+		fontFamily: "Avenir-Roman",
+		fontSize: 16
+	},
+	attributedText: {
+		text: string, // String
+		attributes: [ // Array
+			{			// Object
+				text: "example",
+				color: "blue"
+			},
+			{
+				text: "string",
+				font: {
+    				fontFamily: "Avenir-Medium",
+    				fontSize: 16
+    			}
+			}
+		]			 	
+	}
+});
+
+win.add(label);
+~~~~
+
+A more extensive example is included in `/example/app.js`
+
 ## Changelog
+* 1.1.5
+	* Attributed Text: Fix for Strings containing Emoji characters
 
+* 1.1.4
+    * Attributed Text: Fixed touch location bug causing application to crash
+    * Attributed Text: Fixed highlight range bug
+    * Attributed Text: ARC for memory management
+    * Attributed Text: Lower memory consumption. Good to use in TiUITableViews \*wink\*
+    
+* 1.1.3
+    * Attributed Text: Highlight links when selected
+    * Attributed Text: LongPress event
 
+* 1.1.2 
+	* Attributed Text: Set range instead of text when defining attributes. Range can be useful when you get a predefined range eg. Twitter API
+	* Attributed Text Links: Set links on specific text/range and listen to a tap event.
+	
+* 1.1.1 
+	* Attributed Text: Bug Fixes
+	* Attributed Text: Set base color for the text
+	
+* 1.1 
+	* Attributed Text for TiUILabel - by @dezinezync 
+
+* 1.0.4
+	* Removed the need for requiring NappUI.js.  Modifed the symbol preloader file to a module asset.  See ticket [5](https://github.com/viezel/NappUI/issues/5).
+	
 * 1.0.3
   * Added `popToRoot()` to extend NavigationGroup. Feature request [#3](https://github.com/viezel/NappUI/issues/3)
   * Changed `setBlurred(true)` to `setBlur(0.2)`. Feature request [#1](https://github.com/viezel/NappUI/issues/1)
 
 * 1.0.2
-  * Aded NappUI.js for better use of this module. This is due to some limitations of the Titanium mMdule SDK.
+  * Aded NappUI.js for better use of this module. This is due to some limitations of the Titanium Module SDK.
 
 * 1.0.1
   * Bugfix - invalid build, and some functions did not work as expected. 
