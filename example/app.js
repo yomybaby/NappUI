@@ -246,3 +246,5 @@ image.addEventListener('pinching', function(e){
 image.addEventListener('pinchingend', function(e){
 	console.log(e);
 });*/
+
+window.add(Ti.UI.createListView());
