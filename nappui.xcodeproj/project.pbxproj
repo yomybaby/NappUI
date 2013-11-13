@@ -24,6 +24,12 @@
 /* Begin PBXBuildFile section */
 		24DD6CFA1134B3F500162E58 /* DkNappUiModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* DkNappUiModule.m */; };
 		24DE9E1211C5FE74003F90F6 /* DkNappUiModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* DkNappUiModuleAssets.m */; };
+		754265721833303F00E4A653 /* TiUIListView+Extended.h in Headers */ = {isa = PBXBuildFile; fileRef = 754265701833303F00E4A653 /* TiUIListView+Extended.h */; };
+		754265731833303F00E4A653 /* TiUIListView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 754265711833303F00E4A653 /* TiUIListView+Extended.m */; };
+		754265761833307000E4A653 /* TiUIListViewProxy+IsCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = 754265741833307000E4A653 /* TiUIListViewProxy+IsCustom.h */; };
+		754265771833307000E4A653 /* TiUIListViewProxy+IsCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 754265751833307000E4A653 /* TiUIListViewProxy+IsCustom.m */; };
+		7542657A183330A500E4A653 /* TiUIImageView+Extended.h in Headers */ = {isa = PBXBuildFile; fileRef = 75426578183330A500E4A653 /* TiUIImageView+Extended.h */; };
+		7542657B183330A500E4A653 /* TiUIImageView+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = 75426579183330A500E4A653 /* TiUIImageView+Extended.m */; };
 		AA747D9F0F9514B9006C5449 /* DkNappUi_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DkNappUi_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		B6080BF9179048DA00A05964 /* TiUIiOSToolbarProxy+Extended.h in Headers */ = {isa = PBXBuildFile; fileRef = B679C12A177C79AE0069CD29 /* TiUIiOSToolbarProxy+Extended.h */; };
@@ -79,6 +85,34 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* DkNappUiModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DkNappUiModuleAssets.h; path = Classes/DkNappUiModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* DkNappUiModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DkNappUiModuleAssets.m; path = Classes/DkNappUiModuleAssets.m; sourceTree = "<group>"; };
+		754265701833303F00E4A653 /* TiUIListView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TiUIListView+Extended.h"; sourceTree = "<group>"; };
+		754265711833303F00E4A653 /* TiUIListView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TiUIListView+Extended.m"; sourceTree = "<group>"; };
+		754265741833307000E4A653 /* TiUIListViewProxy+IsCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TiUIListViewProxy+IsCustom.h"; sourceTree = "<group>"; };
+		754265751833307000E4A653 /* TiUIListViewProxy+IsCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TiUIListViewProxy+IsCustom.m"; sourceTree = "<group>"; };
+		75426578183330A500E4A653 /* TiUIImageView+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TiUIImageView+Extended.h"; sourceTree = "<group>"; };
+		75426579183330A500E4A653 /* TiUIImageView+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TiUIImageView+Extended.m"; sourceTree = "<group>"; };
+		7542657D1833324900E4A653 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		7542657E1833324900E4A653 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		7542657F1833324900E4A653 /* ASICacheDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		754265801833324900E4A653 /* ASIDataCompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		754265811833324900E4A653 /* ASIDataCompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		754265821833324900E4A653 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		754265831833324900E4A653 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		754265841833324900E4A653 /* ASIDownloadCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		754265851833324900E4A653 /* ASIDownloadCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		754265861833324900E4A653 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		754265871833324900E4A653 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		754265881833324900E4A653 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		754265891833324900E4A653 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		7542658A1833324900E4A653 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		7542658B1833324900E4A653 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		7542658C1833324900E4A653 /* ASIInputStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		7542658D1833324900E4A653 /* ASIInputStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		7542658E1833324900E4A653 /* ASINetworkQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		7542658F1833324900E4A653 /* ASINetworkQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		754265901833324900E4A653 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		754265911833324900E4A653 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		754265921833324900E4A653 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* DkNappUi_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DkNappUi_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B674C26917CFD43F002D6D9B /* TiUILabel+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUILabel+Extend.h"; path = "Classes/TiUILabel+Extend.h"; sourceTree = "<group>"; };
@@ -145,6 +179,13 @@
 		0867D691FE84028FC02AAC07 /* nappui */ = {
 			isa = PBXGroup;
 			children = (
+				75426578183330A500E4A653 /* TiUIImageView+Extended.h */,
+				75426579183330A500E4A653 /* TiUIImageView+Extended.m */,
+				754265701833303F00E4A653 /* TiUIListView+Extended.h */,
+				754265711833303F00E4A653 /* TiUIListView+Extended.m */,
+				754265741833307000E4A653 /* TiUIListViewProxy+IsCustom.h */,
+				754265751833307000E4A653 /* TiUIListViewProxy+IsCustom.m */,
+				7542657C1833324900E4A653 /* ASI */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -215,6 +256,35 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		7542657C1833324900E4A653 /* ASI */ = {
+			isa = PBXGroup;
+			children = (
+				7542657D1833324900E4A653 /* ASIAuthenticationDialog.h */,
+				7542657E1833324900E4A653 /* ASIAuthenticationDialog.m */,
+				7542657F1833324900E4A653 /* ASICacheDelegate.h */,
+				754265801833324900E4A653 /* ASIDataCompressor.h */,
+				754265811833324900E4A653 /* ASIDataCompressor.m */,
+				754265821833324900E4A653 /* ASIDataDecompressor.h */,
+				754265831833324900E4A653 /* ASIDataDecompressor.m */,
+				754265841833324900E4A653 /* ASIDownloadCache.h */,
+				754265851833324900E4A653 /* ASIDownloadCache.m */,
+				754265861833324900E4A653 /* ASIFormDataRequest.h */,
+				754265871833324900E4A653 /* ASIFormDataRequest.m */,
+				754265881833324900E4A653 /* ASIHTTPRequest.h */,
+				754265891833324900E4A653 /* ASIHTTPRequest.m */,
+				7542658A1833324900E4A653 /* ASIHTTPRequestConfig.h */,
+				7542658B1833324900E4A653 /* ASIHTTPRequestDelegate.h */,
+				7542658C1833324900E4A653 /* ASIInputStream.h */,
+				7542658D1833324900E4A653 /* ASIInputStream.m */,
+				7542658E1833324900E4A653 /* ASINetworkQueue.h */,
+				7542658F1833324900E4A653 /* ASINetworkQueue.m */,
+				754265901833324900E4A653 /* ASIProgressDelegate.h */,
+				754265911833324900E4A653 /* Reachability.h */,
+				754265921833324900E4A653 /* Reachability.m */,
+			);
+			path = ASI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -227,8 +297,10 @@
 				B679C158177C79D90069CD29 /* JRSwizzle.h in Headers */,
 				B6080BF9179048DA00A05964 /* TiUIiOSToolbarProxy+Extended.h in Headers */,
 				B6080BFA179048DA00A05964 /* TiUIPicker+Extended.h in Headers */,
+				754265721833303F00E4A653 /* TiUIListView+Extended.h in Headers */,
 				B6080BFB179048DA00A05964 /* TiUIScrollableView+Extend.h in Headers */,
 				B6080BFC179048DA00A05964 /* TiUISearchBar+Extended.h in Headers */,
+				754265761833307000E4A653 /* TiUIListViewProxy+IsCustom.h in Headers */,
 				B6080BFD179048DA00A05964 /* TiUITabGroup+Extend.h in Headers */,
 				B6080BFE179048DA00A05964 /* TiUITextField+Extended.h in Headers */,
 				B6080BFF179048DA00A05964 /* TiUIView+Animation.h in Headers */,
@@ -239,6 +311,7 @@
 				F0F51DEC181EC71C00AD4DD0 /* UIImage+ImageEffects.h in Headers */,
 				B6A113281793249C0017AEF2 /* TiUIiPhoneNavigationGroupProxy+Extended.h in Headers */,
 				B674C26B17CFD43F002D6D9B /* TiUILabel+Extend.h in Headers */,
+				7542657A183330A500E4A653 /* TiUIImageView+Extended.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +388,14 @@
 				24DD6CFA1134B3F500162E58 /* DkNappUiModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* DkNappUiModuleAssets.m in Sources */,
 				B679C159177C79D90069CD29 /* JRSwizzle.m in Sources */,
+				754265771833307000E4A653 /* TiUIListViewProxy+IsCustom.m in Sources */,
+				7542657B183330A500E4A653 /* TiUIImageView+Extended.m in Sources */,
 				B6080C04179048ED00A05964 /* TiUIiOSToolbarProxy+Extended.m in Sources */,
 				B6080C05179048ED00A05964 /* TiUIPicker+Extended.m in Sources */,
 				B6080C06179048ED00A05964 /* TiUIScrollableView+Extend.m in Sources */,
 				B6080C07179048ED00A05964 /* TiUISearchBar+Extended.m in Sources */,
 				B6080C08179048ED00A05964 /* TiUITabGroup+Extend.m in Sources */,
+				754265731833303F00E4A653 /* TiUIListView+Extended.m in Sources */,
 				B6080C09179048ED00A05964 /* TiUITextField+Extended.m in Sources */,
 				B6080C0A179048ED00A05964 /* TiUIView+Animation.m in Sources */,
 				B6080C0B179048ED00A05964 /* TiUIView+Gestures.m in Sources */,

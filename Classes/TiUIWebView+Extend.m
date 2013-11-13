@@ -47,7 +47,7 @@
         [[self scrollview] setDelaysContentTouches:NO];
     }
 }
-
+/*
 - (void)setUserAgentForiOS_:(id)args
 {
     NSDictionary *dict = @{@"UserAgent": args};
@@ -118,5 +118,5 @@
     
 	return YES;
 }
-
+*/
 @end
